@@ -1,0 +1,30 @@
+.Container {
+  --size: 50vw;
+  --min-size: 300px;
+  --max-size: 800px;
+
+  margin: 64px auto;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  min-width: var(--min-size);
+  max-width: var(--max-size);
+  min-height: var(--min-size);
+  max-height: var(--max-size);
+}
+
+.Board {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  position: absolute;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.BoardSquare {
+  padding: 0;
+  height: calc(1 / 3 * 100%);
+}
